@@ -100,6 +100,10 @@ header {
     transition: .4s;
 }
 
+.checkbox-wrapper-22 input:checked + .slider {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); /* Gradient background for slider when checked */
+}
+
 
 .checkbox-wrapper-22 .slider:before {
     background-color: #fff;
