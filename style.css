@@ -1,0 +1,360 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-background: hsl(234, 23%, 17%);
+    --body-background:  hsl(230, 17%, 14%); 
+    --card-bg: hsl(228, 28%, 20%);
+    --dark-text:hsl(228, 34%, 66%);
+    --white-text: hsl(0, 0%, 100%);
+    --hover-card: hsl(228, 36%, 30%);
+}
+
+.light-theme{
+    --top-background:hsl(225, 100%, 98%);
+    --body-background: hsl(0, 0%, 100%);
+    --card-bg: hsl(227, 47%, 96%);
+    --dark-text:hsl(228, 12%, 44%);
+    --white-text: hsl(230, 17%, 14%);
+    --hover-card:hsl(212, 76%, 93%);
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background:var(--body-background);
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    height: 30%;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 900;
+    background-color:var(--top-background);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    line-height: 20px;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100px;
+   ;
+}
+
+.main h2{
+    margin-bottom: 5px;
+    color: var(--white-text)
+}
+
+.main p {
+    color: var(--dark-text);
+    font-weight: 700;
+}
+
+.toggle{
+    color: var(--white-text);
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+/*Slider button*/
+.checkbox-wrapper-22{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.checkbox-wrapper-22 .switch {
+    display: inline-block; 
+    height: 24px;
+    position: relative;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.checkbox-wrapper-22 .switch input {
+    display: none;
+}
+
+.checkbox-wrapper-22 .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+
+.checkbox-wrapper-22 .slider:before {
+    background-color: #fff;
+    bottom: 3px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+}
+
+.checkbox-wrapper-22 input:checked+.slider {
+    background-color: #e1eee2;
+}
+
+.checkbox-wrapper-22 input:checked+.slider:before {
+    transform: translateX(34px);
+}
+
+.checkbox-wrapper-22 .slider.round {
+    border-radius: 34px;
+}
+
+.checkbox-wrapper-22 .slider.round:before {
+    border-radius: 50%;
+}
+
+.profiles {
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.profile{
+    width: 300px;
+    height: 100%; 
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    background-color:var(--card-bg);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile:hover{
+    background-color:var(--hover-card);
+}
+
+.facebook{
+    border-top: 4px solid hsl(208, 92%, 53%);
+
+}
+
+.twitter{
+    border-top:4px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+    position: relative;
+  }
+  
+  .instagram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  }
+
+.youtube{
+  border-top:4px solid  hsl(348, 97%, 39%);
+}
+
+.icon-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-user img{
+    margin-right: 8px;
+}
+
+.icon-user p {
+    font-size: 13px;
+    color: var(--dark-text);
+}
+
+.folowers{
+    margin-bottom: 20px;
+}
+
+.folowers h1{
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: var(--white-text);
+}
+
+.folowers p {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: var(--dark-text);
+}
+
+.today-folowers{
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.today-folowers img{
+    margin-right: 6px;
+}
+
+.today-folowers p {
+    font-size: 14px;
+}
+
+.red{
+    color: rgb(249, 9, 57);
+}
+
+.green{
+    color: #66bb6a;
+}
+
+.overview-today{
+    margin-top: -70px;
+}
+
+.overview-title {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: var(--white-text);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.overviews{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.overview{
+   width: 300px;
+   height: 130px;
+   padding: 20px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+   background-color:var(--card-bg);
+   border-radius: 5px;
+   margin-right: 25px;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+.overview:hover{
+    background-color: var(--hover-card);
+}
+
+.views{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.views p {
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.number-views{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.number-views h3{
+    font-size: 30px;
+    color: var(--white-text);
+}
+
+.percents{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.percents img{
+  margin-right: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+   header{
+    height: 30%;
+   }
+
+   .main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   }
+
+  .toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .profiles{
+    bottom: 60px;
+  }
+   
+    .profiles,
+    .overviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .profile,
+    .overview {
+        width: 95%;
+        margin: 0 auto 25px;
+    }
+}
