@@ -76,6 +76,7 @@ header {
     height: 30px;
     display: flex;
     align-items: center;
+    color: var(--dark-text);
 }
 .checkbox-wrapper-22 .switch {
     display: inline-block; 
@@ -134,7 +135,7 @@ header {
 
 .profiles {
     position: relative;
-    bottom: 100px;
+    bottom: 120px;
     display: flex;
     justify-content: center;
     width: 80%;
@@ -144,7 +145,7 @@ header {
 
 .profile{
     width: 300px;
-    height: 100%; 
+    height: 230px; 
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -213,7 +214,7 @@ header {
 
 .folowers h1{
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: 45px;
     color: var(--white-text);
 }
 
@@ -249,7 +250,7 @@ header {
 }
 
 .overview-today{
-    margin-top: -70px;
+    margin-top: -80px;
 }
 
 .overview-title {
